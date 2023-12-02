@@ -1,0 +1,121 @@
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+html,body{
+      height: 100%;
+      width: 100%;
+}
+.main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(141, 240, 141);
+      flex-direction: column;
+}
+.panel{
+      overflow: hidden;
+      min-height: 79%;
+      width: 80%;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+}
+.ptop{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      width: 100%;
+      height: 80px;
+      background-color:rgb(70, 137, 79);
+      padding: 0 20%;
+}
+.elem{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 10%;
+      
+}
+.elem h2{
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: 1.6px;
+}
+.box{
+      padding: 10px 15px;
+      background: #fff;
+      border-radius: 5px;
+      color: #000;
+      font-weight: 600;
+      font-size: 21px;
+}
+.pbtm{
+      display: flex;
+      flex-wrap: wrap;
+      height: calc(100% - 80px);
+      width: 100%;
+      padding: 10px 20px;
+      gap: 9px;
+}
+#bubble{
+      height: 40px;
+      width: 40px;
+      background: rgb(12, 105, 74);
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+}
+#bubble:hover{
+      cursor: pointer;
+      background: rgb(11, 67, 40);
+}
+#btn{
+      padding: 15px 30px;
+      background-color: rgba(255,255,255,0.37); 
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-size: 20px;
+      cursor: pointer;
+}
+.btn{
+      opacity: 0;
+      
+}
+@media screen and (max-width: 686px) {
+      .panel{
+            height: 79.5%;
+      }
+      .elem{
+            width: 2%;
+            gap: 2px;
+      }
+      .elem h2{
+            font-size: 12px;
+            margin-left: -20px;
+      }
+      .ptop{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+      }
+      .elem .box{
+            padding: 5px 10px;
+      }
+      .elem:nth-child(2){
+            margin-right: 18px;
+      }
+}
